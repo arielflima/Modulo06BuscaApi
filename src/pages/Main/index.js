@@ -25,7 +25,7 @@ export default class Main extends Component {
     title: 'Usuários',
   };
 
-  static PropTypes = {
+  static propTypes = {
     navigation: PropTypes.shape({
       navigate: PropTypes.func,
     }).isRequired,
@@ -47,7 +47,7 @@ export default class Main extends Component {
 
   async componentDidUpdate(_, prevState) {
     const { users } = this.state;
-    if (prevState.users === users) {
+    if (prevState.users !== users) {
       AsyncStorage.setItem('users', JSON.stringify(users));
     }
   }
