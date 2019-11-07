@@ -55,6 +55,7 @@ export const OwnerAvatar = styled.Image`
   border-radius: 21px;
   background: #eee;
 `;
+
 export const Info = styled.View`
   margin-left: 10px;
   flex: 1;
@@ -72,4 +73,14 @@ export const Author = styled.Text`
   font-size: 13px;
   color: #666;
   margin-top: 2px;
+`;
+
+export const Loading = styled.ActivityIndicator.attrs({
+  color: '#7159c1',
+  size: 50,
+})`
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 `;
