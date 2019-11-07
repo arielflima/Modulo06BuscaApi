@@ -96,7 +96,7 @@ export default class Main extends Component {
             returnKeyType="send"
             onSubmitEditing={this.handleAddUser}
           />
-          <SubmitButton loading={loading} onPress={this.ahndleAddUser}>
+          <SubmitButton loading={loading} onPress={this.handleAddUser}>
             {loading ? (
               <ActivityIndicator color="#FFF" />
             ) : (
